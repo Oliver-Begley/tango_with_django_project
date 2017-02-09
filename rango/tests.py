@@ -1,8 +1,11 @@
 from django.test import TestCase
 from django.core.urlresolvers import reverse
 from django.contrib.staticfiles import finders
+from rango.models import Category
 
 # Thanks to Enzo Roiz https://github.com/enzoroiz who made these tests during an internship with us
+
+
 
 class GeneralTests(TestCase):
     def test_serving_static_files(self):
@@ -12,7 +15,6 @@ class GeneralTests(TestCase):
 
 
 class IndexPageTests(TestCase):
-        
     def test_index_contains_hello_message(self):
         # Check if there is the message 'Rango Says'
         # Chapter 4
@@ -248,3 +250,5 @@ class Chapter7ViewTests(TestCase):
 
 
     # test if the add_page.html template exists.
+	
+		
